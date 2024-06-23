@@ -13,11 +13,11 @@ function UpdateDeductionForm({ index, currentName, currentAmount, onUpdateDeduct
   const handleSubmit = (e) => {
     e.preventDefault();
     onUpdateDeduction(index, name, amount);
-    onCancel(); // Close the form after updating
+    onCancel(); 
   };
 
   const handleCancel = () => {
-    onCancel(); // Close the form without updating
+    onCancel(); 
   };
 
   return (

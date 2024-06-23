@@ -15,11 +15,11 @@ function UpdateEarningForm({ index, currentName, currentAmount, currentEpfEtf, o
   const handleSubmit = (e) => {
     e.preventDefault();
     onUpdateEarning(index, name, amount, epfEtf);
-    onCancel(); // Close the form after updating
+    onCancel(); 
   };
 
   const handleCancel = () => {
-    onCancel(); // Close the form without updating
+    onCancel(); 
   };
 
   const handleEpfEtfChange = () => {

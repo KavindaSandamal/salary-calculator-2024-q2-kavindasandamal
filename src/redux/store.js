@@ -1,10 +1,13 @@
-import { createStore, combineReducers } from 'redux';
-import salaryReducer from './reducers';
-
-const rootReducer = combineReducers({
-  salary: salaryReducer,
-});
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
+import rootReducer from './reducers';
 
 const store = createStore(rootReducer);
 
-export default store;
+const App = () => (
+  <Provider store={store}>
+    <SalaryCalculator />
+  </Provider>
+);
+
+export default App;

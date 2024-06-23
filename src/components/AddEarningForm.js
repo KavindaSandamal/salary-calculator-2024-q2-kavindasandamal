@@ -13,8 +13,7 @@ function AddEarningForm({ onAddEarning, onClose }) {
   };
 
   const handleCancel = () => {
-    onClose(); // Call onClose function to close the form
-    // Additional cancel actions can be added here if needed
+    onClose(); 
   };
 
   return (

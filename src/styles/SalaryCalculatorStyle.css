@@ -58,8 +58,8 @@ body {
   .transparent-button {
     background: none;
     border: none;
-    color: #0052EA; /* or any color you prefer */
-    text-decoration: none; /* Remove underline */
+    color: #0052EA; 
+    text-decoration: none; 
     cursor: pointer;
     padding: 0;
     font-size: 14px;
@@ -72,14 +72,14 @@ body {
   }
   
   .transparent-button .icon {
-    margin-right: 5px; /* Space between icon and text */
-    width: 14px; /* Adjust the size as needed */
+    margin-right: 5px; 
+    width: 14px;
     height: 14px;
     color: #0052EA;
   }
   
   .transparent-button:hover {
-    color: darkblue; /* Optional: Change color on hover */
+    color: darkblue;
   }
   
   .line {

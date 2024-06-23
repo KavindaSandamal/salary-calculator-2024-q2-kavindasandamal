@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import SalaryCalculator from '../src/components/SalaryCalculator';
 
 function App() {

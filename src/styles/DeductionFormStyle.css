@@ -109,8 +109,8 @@ body {
     border: none;
     width: 79px;
     height: 40px;
-    color: #0052EA; /* or any color you prefer */
-    text-decoration: none; /* Remove underline */
+    color: #0052EA;
+    text-decoration: none; 
     cursor: pointer;
     padding-left: 16px;
     font-size: 14px; 
@@ -128,8 +128,8 @@ body {
     width: 60px;
     height: 40px;
     border-radius: 4px;
-    color: #FFFFFF; /* or any color you prefer */
-    text-decoration: none; /* Remove underline */
+    color: #FFFFFF; 
+    text-decoration: none; 
     cursor: pointer;
     padding-left: 16px;
     font-size: 14px; 
@@ -147,8 +147,8 @@ body {
     width: 60px;
     height: 40px;
     border-radius: 4px;
-    color: #FFFFFF; /* or any color you prefer */
-    text-decoration: none; /* Remove underline */
+    color: #FFFFFF; 
+    text-decoration: none; 
     cursor: pointer;
     padding-left: 5px;
     font-size: 14px; 
@@ -219,7 +219,7 @@ body {
     
     .transparent-cancel-button,
     .add-button {
-      flex: 1; /* Equal width for both buttons */
+      flex: 1; 
       max-width: 100px;
       margin-left: -320px;
       height: 40px;

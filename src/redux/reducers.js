@@ -2,20 +2,32 @@ const initialState = {
     basicSalary: 0,
     earnings: [],
     deductions: [],
+    sumEpf: 0,
   };
   
-  const salaryReducer = (state = initialState, action) => {
+  const rootReducer = (state = initialState, action) => {
     switch (action.type) {
-      case 'UPDATE_SALARY':
+      case 'SET_BASIC_SALARY':
+        return { ...state, basicSalary: action.payload };
+  
+      case 'ADD_EARNING':
+        return { ...state, earnings: [...state.earnings, action.payload] };
+  
+      case 'DELETE_EARNING':
         return {
           ...state,
-          basicSalary: action.payload,
+          earnings: state.earnings.filter((_, index) => index !== action.payload),
         };
-      // Add more cases as needed
+  
+
+  
+      case 'RESET_STATE':
+        return initialState;
+  
       default:
         return state;
     }
   };
   
-  export default salaryReducer;
+  export default rootReducer;
   

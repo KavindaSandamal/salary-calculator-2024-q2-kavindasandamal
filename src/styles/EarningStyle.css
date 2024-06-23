@@ -1,4 +1,3 @@
-/* Update your body CSS if necessary */
 body {
   font-family: 'Inter', sans-serif;
 }
@@ -69,14 +68,14 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 500; /* Ensure this is below the modal */
+  z-index: 500; 
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .modal {
-  z-index: 1000; /* Ensure this is above the overlay */
+  z-index: 1000; 
 }
 
 .modal-content {
