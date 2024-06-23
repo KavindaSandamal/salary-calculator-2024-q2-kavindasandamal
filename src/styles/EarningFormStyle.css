@@ -1,0 +1,235 @@
+/* Base styles */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.modal {
+  position: fixed;
+  width: 90%;
+  max-width: 540px;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-topic {
+  width: 100%;
+  max-width: 492px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Center align items vertically */
+}
+
+.add-topic-text {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.cut-icon {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+}
+
+.add-line {
+  width: 100%;
+  max-width: 538px;
+  border-width: 1px;
+  border-color: #E0E0E0;
+  border-style: groove;
+}
+
+.form-box {
+  margin-top: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  max-width: 492px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.label-box {
+  width: 100%;
+  height: 56px;
+  display: flex;
+  flex-direction: column;
+}
+
+.label-text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 20px;
+  color: #00318C;
+  margin-bottom: 2px;
+}
+
+.input-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  width: 100%;
+  height: 32px;
+  border: 1px solid #E0E0E0;
+  border-radius: 4px;
+  padding: 8px; /* Added padding for better input appearance */
+  box-sizing: border-box; /* Ensure padding is included in width */
+}
+.salary-input::-webkit-outer-spin-button,
+.salary-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.input-text[type=number] {
+  -moz-appearance: textfield;
+}
+
+.button-boxs {
+  width: 100%;
+  max-width: 492px;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.transparent-cancel-button,
+.add-button {
+  flex: 1; /* Equal width for both buttons */
+  max-width: 155px;
+  height: 40px;
+  border-radius: 4px;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.transparent-cancel-button {
+  background: none;
+  color: #0052EA;
+  border: 1px solid #0052EA;
+}
+
+.add-button {
+  background: #0052EA;
+}
+
+.check-container {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin-bottom: 32px;
+}
+
+.check-box {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #E0E0E0;
+  border-radius: 4px; /* Improved checkbox appearance */
+  cursor: pointer;
+}
+
+.check-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+@media screen and (max-width: 600px) {
+  .modal {
+    position: fixed;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  .form-box {
+    margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    max-width: 42px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .input-text{
+    max-width: 235px;
+  }
+  .add-line {
+    width: 100%;
+    max-width: 278px;
+    border-width: 1px;
+    border-color: #E0E0E0;
+    border-style: groove;
+  }
+  
+  .label-text {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #00318C;
+    margin-bottom: 2px;
+  }
+  
+  .button-boxs {
+    width: 100%;
+    max-width: 200px;
+    height: 40px;
+    margin-left: 0px;
+    margin-right: unset;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .transparent-cancel-button,
+  .add-button {
+    flex: 1; /* Equal width for both buttons */
+    max-width: 100px;
+    margin-left: -320px;
+    height: 40px;
+    border-radius: 4px;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 500;
+  }
+}

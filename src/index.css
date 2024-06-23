@@ -1,13 +1,483 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Inter', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.reset {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  margin-bottom: 24px;
 }
+
+.line {
+  width: 632px;
+  border-width: 1px;
+  border-color: #E0E0E0;
+  border-style: groove;
+
+}
+.salary-calculator {
+  margin-top: 142px;
+  margin-bottom: 142px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content:center;
+  gap: 24px;
+ 
+}
+
+.margin-container {
+  margin-top: 142px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-style: groove;
+  justify-content:center;
+  gap: 24px;
+}
+
+.cal-container {
+  width: 680px;
+  height: 616px;
+  background-color: #FAFAFA;
+  border-color: #E0E0E0;
+  border-width: 1px;
+  border-style:groove;
+  border-radius: 8px;
+}
+
+.inter-container {
+  margin: 24px;
+}
+
+.details-container {
+  width: 480px;
+  height: 614px;
+  border-color: #E0E0E0;
+  border-radius: 8px;
+  border-width: 1px;
+  border-style: groove;
+}
+
+.inter-detail-container {
+  margin: 16px;
+}
+
+.gap {
+  margin: 8px;
+}
+
+.detail-1 {
+  margin-top: 25px;
+}
+
+.detail-1 p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.small-title {
+  font-size: 12px;
+  font-weight: 400px;
+  line-height: 20px;
+  color: #757575;
+  margin-top: 0;
+}
+
+.detail-2 {
+  width: 448px;
+  height: 56px;
+  border-radius: 4px;
+  border-width: 0.78px;
+  border-color: #E0E0E0;
+  border-style: groove;
+}
+
+.net-salary {
+  width: 416px;
+  height: 24px;
+  margin: 16px;
+}
+
+.net-salary p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.detail-3 {
+  margin-top: 24px;
+}
+
+.detail-3 p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.left, .right {
+  width: 45%;
+}
+
+.label {
+  display: flex;
+  gap: 8px;
+  flex-direction: column;
+  margin-bottom: 10px;
+  font-weight: 600;
+  size: 16px;
+}
+
+.label input {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px; 
+  font-weight: 400; 
+  line-height: 24px; 
+  height: 32px;
+  width: 464px;
+  padding : 8px;
+}
+
+
+h4 {
+  font-weight: 700; /* Adjust this value as needed */
+  font-family: 'Inter', sans-serif; /* Ensure it uses the Inter font */
+  font-size: 20px;
+}
+
+.sub-title {
+  font-weight: 600; /* Adjust this value as needed */
+  font-family: 'Inter', sans-serif; /* Ensure it uses the Inter font */
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 16px;
+  margin-bottom: 0;
+}
+
+input {
+  font-size: 16px;
+  font-weight: 600;
+  ;
+}
+
+
+
+/* Styles for the modal */
+.modal {
+  position: fixed;
+  width: 540px;
+  height: 384px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-topic {
+  width: 492px;
+  height: 24px;
+  margin-left: 24px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+ 
+}
+
+.add-topic-text {
+  font-weight: 600; 
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+
+}
+.cut-icon {
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  
+}
+
+.add-line {
+  width: 540;
+  border-width: 1px;
+  border-color: #E0E0E0;
+  border-style: groove;
+}
+
+.form-box {
+  margin-top: 32px;
+  margin-left: 24px;
+  width: 492px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  
+}
+
+.label-box {
+  width: 492px;
+  height: 56px;
+  display: flex;
+  flex-direction: column;
+}
+
+.label-text {
+  font-weight: 600; 
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: #00318C;
+  margin-bottom: 2px;
+}
+
+.input-text {
+  font-weight: 400; 
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  width: 492px;
+  height: 32px;
+  border-style: groove;
+  border-color: #E0E0E0;
+  border-width: 1px;
+  border-radius: 4px;
+}
+
+.check-box {
+  width: 18px;
+  height: 18px;
+  border-width: 1px;
+}
+
+.check-text {
+  font-weight: 400; 
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.check-container {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin-bottom: 32px;
+}
+
+.button-boxs {
+  width: 155px;
+  height: 40px;
+  margin-left: 361px;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.transparent-cancel-button {
+  background: none;
+  border: none;
+  width: 79px;
+  height: 40px;
+  color: #0052EA; /* or any color you prefer */
+  text-decoration: none; /* Remove underline */
+  cursor: pointer;
+  padding-left: 16px;
+  font-size: 14px; 
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.add-button {
+  background: #0052EA;
+  border: none;
+  width: 60px;
+  height: 40px;
+  border-radius: 4px;
+  color: #FFFFFF; /* or any color you prefer */
+  text-decoration: none; /* Remove underline */
+  cursor: pointer;
+  padding-left: 16px;
+  font-size: 14px; 
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.update-button {
+  background: #0052EA;
+  border: none;
+  width: 60px;
+  height: 40px;
+  border-radius: 4px;
+  color: #FFFFFF; /* or any color you prefer */
+  text-decoration: none; /* Remove underline */
+  cursor: pointer;
+  padding-left: px;
+  font-size: 14px; 
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+}
+
+
+.close {
+  align-self: flex-end;
+  cursor: pointer;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.overlay {
+  position: relative;
+}
+
+.overlay.active:before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 500;
+}
+
+.transparent-button {
+  background: none;
+  border: none;
+  color: #0052EA; /* or any color you prefer */
+  text-decoration: none; /* Remove underline */
+  cursor: pointer;
+  padding: 0;
+  font-size: 14px; 
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.transparent-button .icon {
+  margin-right: 5px; /* Space between icon and text */
+  width: 14px; /* Adjust the size as needed */
+  height: 14px;
+  color: #0052EA;
+}
+
+.transparent-button:hover {
+  color: darkblue; /* Optional: Change color on hover */
+}
+
+.modify-button {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  border-width: 0;
+ 
+}
+
+.modify-container {
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+ 
+}
+
+.ver-line {
+  width: 0px;
+  height: 20px;
+  border-width: 1px;
+  border-color: #E0E0E0;
+  border-style: groove;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.earnings {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+}
+
+.epf-etf {
+  height: 18px;
+  margin-top: 1px;
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  gap: 8px;
+  
+}
+
+.deduction {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  margin-top: 24px;
+  position: relative; 
+}
+
+.dark-overlay {
+  position: relative;
+}
+
+.dark-overlay::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.dark-overlay .modify-container {
+  position: relative;
+  z-index: 2;
+}
+
+.dark-overlay .deduction {
+  position: relative;
+  z-index: 2;
+}
+
+
+
